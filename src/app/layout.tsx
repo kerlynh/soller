@@ -12,7 +12,6 @@ import "./globals.css";
 //   weight: "100 900",
 // });
 const roboto = Roboto({
-  // weight: ["100", "300", "400", "500", "700", "900"],
   weight: ["400", "500", "700", "900"],
   style: ["normal"],
   subsets: ["latin"],

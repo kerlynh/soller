@@ -2,20 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+.custom-clip-path {
+  clip-path: path(
+    "M673 0H158.125C21.3124 142.265 -107.666 492.12 140.534 637.976C374.769 775.625 605.087 624.306 673 559.79V0Z"
+  );
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@media (max-width: 768px) {
+  .custom-clip-path {
+    clip-path: path(
+      "M308 0H72.8916C10.4188 68.2626 -48.4771 236.132 64.859 306.118C171.818 372.166 276.989 299.559 308 268.603V0Z"
+    );
   }
 }
 
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+@media (min-width: 768px) and (max-width: 1024px) {
+  .custom-clip-path {
+    clip-path: path(
+      "M487 0H114.057C32.4278 108.135 -52.0388 370.626 115.775 469.83C253.516 570.377 432.677 443.894 487 385.529V0Z"
+    );
+  }
 }

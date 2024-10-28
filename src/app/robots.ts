@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: "/",
       disallow: "/public/images",
     },
-    sitemap: "",
+    sitemap: "https://soller-rho.vercel.app/",
   };
 }

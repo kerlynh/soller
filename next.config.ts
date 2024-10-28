@@ -1,8 +1,5 @@
 import type { NextConfig } from "next";
 
-const nextConfig: NextConfig = {
-  reactStrictMode: true,
-  experimental: { optimizeCss: true, cssChunking: "loose" },
-};
+const nextConfig: NextConfig = {};
 
 export default nextConfig;

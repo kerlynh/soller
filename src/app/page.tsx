@@ -13,9 +13,7 @@ const PersonalizedServices = dynamic(
 );
 const PowerfulFeatures = dynamic(
   () => import("./page/components/PowerfulFeatures"),
-  {
-    ssr: false,
-  }
+  { ssr: false }
 );
 const AllThePower = dynamic(() => import("./page/components/AllThePower"), {
   ssr: false,
